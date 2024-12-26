@@ -73,15 +73,5 @@ To ensure the project runs correctly, you need to update the libraries by adding
    - Develop a mobile-friendly version or a dedicated mobile app to allow users to take exams on their smartphones and tablets.
 
 ### Setup Instructions
-
-#### Configuration
-
-1. Copy the `config-template.properties` file to `config.properties` in the root directory.
-2. Edit `config.properties` to include your database details:
-   ```properties
-   db.url=jdbc:mysql://localhost:3306/yourdatabase
-   db.username=yourusername
-   db.password=yourpassword
-
-   currently we're using Online MySQL database from Aiven Console...Inorder to Use your own DataBase modify url,username,password accordingly in config.properties file
+   -currently we're using Online MySQL database from Aiven Console...Inorder to Use your own DataBase modify url,username,password accordingly in database file
 
