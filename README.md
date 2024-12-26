@@ -4,6 +4,25 @@
 **Description:** 
 The Online Examination System is a robust application designed to facilitate secure and efficient management of online tests and assessments. It provides users with a seamless experience for logging in, signing up, updating profiles, and participating in multiple-choice question (MCQ) exams.
 
+To ensure the project runs correctly, you need to update the libraries by adding them from the global libraries to the current project. Follow these steps:
+
+1. **Open the `Project Structure` window in IntelliJ IDEA:**
+   - Go to **File** > **Project Structure**.
+
+2. **Navigate to `Platform Settings` and select `Global Libraries`:**
+   - In the left sidebar, expand **Platform Settings** and click on **Global Libraries**.
+
+3. **Locate the required library (e.g., `mysql-connector-j-9.1.0`):**
+   - Find the required library in the list.
+
+4. **Add the library to the current project:**
+   - Click the **`+`** button and select **Add to Project**.
+   - Choose the appropriate module to which you want to add the library.
+
+5. **Apply the changes and click `OK`:**
+
+   This ensures that all necessary libraries are correctly linked to your project.
+
 ### Key Features
 1. **User Authentication and Authorization:**
    - **Secure Login:** Users can log in using their email and password. The system checks the credentials against the stored data in the MySQL database.
