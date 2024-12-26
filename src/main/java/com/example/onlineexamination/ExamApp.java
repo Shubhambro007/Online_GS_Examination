@@ -12,8 +12,8 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-//Main Class ExamApp to Start Application
-public class ExamApp extends Application {
+//Main Class to Start Application
+public class Main extends Application {
     private double x = 0;
     private double y = 0;
     @Override
