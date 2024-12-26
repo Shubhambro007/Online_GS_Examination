@@ -16,7 +16,7 @@ To ensure the project runs correctly, you need to update the libraries by adding
    - Find the required library in the list.
 
 4. **Add the library to the current project:**
-   - Click the **`+`** button and select **Add to Project**.
+   - Right-click on the library and select **Add to Project** > **Copy to Project Libraries**.
    - Choose the appropriate module to which you want to add the library.
 
 5. **Apply the changes and click `OK`:**
