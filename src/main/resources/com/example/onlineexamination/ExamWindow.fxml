@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamination.ExamWindowController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="questionLabel" layoutX="122.0" layoutY="70.0" prefHeight="178.0" prefWidth="773.0" text="Question">
+               <font>
+                  <Font name="AdobeArabic-Regular" size="34.0" />
+               </font></Label>
+            <Button fx:id="optionButton1" layoutX="122.0" layoutY="404.0" mnemonicParsing="false" onAction="#initialize" prefHeight="75.0" prefWidth="207.0" style="-fx-background-color: dodgerblue; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Option 1" textFill="WHITE" />
+            <Button fx:id="optionButton2" layoutX="733.0" layoutY="558.0" mnemonicParsing="false" onAction="#initialize" prefHeight="75.0" prefWidth="207.0" style="-fx-background-color: dodgerblue; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Option 2" textFill="WHITE" />
+            <Button fx:id="optionButton3" layoutX="122.0" layoutY="558.0" mnemonicParsing="false" onAction="#initialize" prefHeight="75.0" prefWidth="207.0" style="-fx-background-color: dodgerblue; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Option 3" textFill="WHITE" />
+            <Button fx:id="optionButton4" layoutX="733.0" layoutY="404.0" mnemonicParsing="false" onAction="#initialize" prefHeight="75.0" prefWidth="207.0" style="-fx-background-color: dodgerblue; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Option 4" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitButton" layoutX="436.0" layoutY="633.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="75.0" prefWidth="207.0" style="-fx-background-color: purple; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="SUBMIT" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="scoreLabel" layoutX="122.0" layoutY="10.0" text="Score: 0" />
+            <Label fx:id="timerLabel" layoutX="733.0" layoutY="10.0" text="Time Remaining: 10:00" />
+            <Button fx:id="close" layoutX="972.0" layoutY="-2.0" mnemonicParsing="false" onAction="#close" prefHeight="33.0" prefWidth="53.0" styleClass="close" stylesheets="@LoginCSS.css" text="X" />
+            <Button fx:id="logout" layoutX="885.0" layoutY="57.0" mnemonicParsing="false" onAction="#logout" prefHeight="24.0" prefWidth="111.0" style="-fx-background-color: red; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-cursor: hand;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

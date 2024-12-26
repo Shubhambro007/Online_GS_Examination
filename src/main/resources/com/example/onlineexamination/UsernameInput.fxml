@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #f0f4f8;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamination.UsernameInputController">
+    <children>
+        <VBox alignment="CENTER" layoutX="50.0" layoutY="50.0" prefHeight="150.0" prefWidth="300.0" spacing="20">
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;" text="Enter Username">
+                <font>
+                    <Font name="Arial" size="24" />
+                </font>
+            </Label>
+            <VBox spacing="10">
+                <Label style="-fx-font-size: 16px; -fx-text-fill: #555;" text="Username:" />
+                <TextField fx:id="usernameField" prefHeight="30.0" prefWidth="300.0" style="-fx-padding: 10; -fx-font-size: 14px;" />
+            </VBox>
+            <HBox alignment="CENTER" spacing="20">
+                <Button fx:id="submitButton" onAction="#handleSubmit" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20; -fx-background-radius: 5; -fx-cursor: hand;" text="Submit" />
+                <Button fx:id="closeButton" onAction="#handleCancel" style="-fx-background-color: #6c757d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20; -fx-background-radius: 5; -fx-cursor: hand;" text="Cancel" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

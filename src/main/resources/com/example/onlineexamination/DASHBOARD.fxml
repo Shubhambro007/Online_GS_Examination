@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamination.DASHBOARD">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="365.0" layoutY="94.0" text="Online GS Examination">
+               <font>
+                  <Font name="Gill Sans Ultra Bold Condensed" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="start" layoutX="386.0" layoutY="539.0" mnemonicParsing="false" onAction="#Start" prefHeight="39.0" prefWidth="253.0" style="-fx-background-color: dodgerblue; -fx-cursor: hand; -fx-background-radius: 32px; -fx-border-radius: 32px;" text="Start">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Pane layoutX="48.0" layoutY="150.0" prefHeight="358.0" prefWidth="929.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaeeee" height="358.0" stroke="BLACK" strokeType="INSIDE" width="929.0" />
+                  <Text layoutX="15.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Quiet Environment: Ensure you're in a distraction-free environment." wrappingWidth="830.6708984375">
+                     <font>
+                        <Font name="SansSerif" size="15.0" />
+                     </font></Text>
+                  <Text layoutX="15.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Answer Carefully: Select your answers by clicking the appropriate radio button. Review your answers before submission." wrappingWidth="830.6708984375">
+                     <font>
+                        <Font name="SansSerif" size="15.0" />
+                     </font></Text>
+                  <Text layoutX="14.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Submission Options: You can submit the exam anytime using the &quot;Submit&quot; button, or it will be auto-submitted when the timer expires." wrappingWidth="929.0000304579735">
+                     <font>
+                        <Font name="SansSerif" size="15.0" />
+                     </font></Text>
+                  <Text layoutX="15.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* No Cheating: Complete the exam honestly. Misconduct will result in disqualification." wrappingWidth="830.6708984375">
+                     <font>
+                        <Font name="SansSerif" size="15.0" />
+                     </font></Text>
+                  <Text layoutX="10.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*****************************************Good luck with your exam! 🍀*******************************************" wrappingWidth="908.6708984375">
+                     <font>
+                        <Font name="Sans Serif Collection" size="15.0" />
+                     </font></Text>
+                  <Text layoutX="15.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* One Question is Answerable only Once , so attempt Carefully." wrappingWidth="830.6708984375">
+                     <font>
+                        <Font name="SansSerif" size="15.0" />
+                     </font></Text>
+                  <Text layoutX="15.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* 10-Minute Timer: You have 10 minutes to complete the exam. The timer will auto-submit your answers when time is up." wrappingWidth="830.6708984375">
+                     <font>
+                        <Font name="SansSerif" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="close" layoutX="969.0" layoutY="-1.0" mnemonicParsing="false" onAction="#close" prefWidth="56.0" styleClass="close" stylesheets="@LoginCSS.css" text="x" />
+            <Button fx:id="profile" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#profile" prefHeight="39.0" prefWidth="158.0" style="-fx-background-color: orange; -fx-cursor: hand; -fx-background-radius: 32px; -fx-border-radius: 32px;" text="Update Profile">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

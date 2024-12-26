@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamination.ExamAppController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="316.0" layoutY="106.0" text="Welcome back">
+               <font>
+                  <Font name="Arial" size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="345.0" layoutY="175.0" text="Enter Your Details to get Sign In Into Your Account" textFill="#948e8e" />
+            <Text layoutX="418.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font name="AdobeHebrew-Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="username" layoutX="418.0" layoutY="267.0" prefHeight="47.0" prefWidth="239.0" promptText="e.g. usernames@gmail.com" style="-fx-background-radius: 32px; -fx-border-radius: 32px;" styleClass="text-field" stylesheets="@LoginCSS.css" />
+            <Text layoutX="419.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="AdobeHebrew-Bold" size="20.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="password" layoutX="418.0" layoutY="348.0" prefHeight="47.0" prefWidth="239.0" promptText="enter your password" style="-fx-background-radius: 32px; -fx-border-radius: 32px;" styleClass="text-field" stylesheets="@LoginCSS.css" />
+            <Button fx:id="login" layoutX="457.0" layoutY="457.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="47.0" prefWidth="162.0" style="-fx-cursor: hand; -fx-background-radius: 32px; -fx-border-radius: 32px;" styleClass="login-btn" stylesheets="@LoginCSS.css" text="Login">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="close" layoutX="976.0" layoutY="-1.0" mnemonicParsing="false" onAction="#close" prefHeight="31.0" prefWidth="50.0" styleClass="close" stylesheets="@LoginCSS.css" text="X" />
+            <ImageView fitHeight="94.0" fitWidth="129.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@backiee-46058-landscape.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="forgot_password" layoutX="427.0" layoutY="402.0" mnemonicParsing="false" onAction="#forgotPassword" style="-fx-background-color: white; -fx-background-color: transparent; -fx-cursor: hand;" text="Forgot Password??" textFill="#1c8cb9" />
+            <Button fx:id="signup" layoutX="880.0" layoutY="45.0" mnemonicParsing="false" onAction="#Signup" style="-fx-background-color: white; -fx-background-color: transparent; -fx-cursor: hand;" text="New User ? SIGNUP" textFill="#1c8cb9" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
