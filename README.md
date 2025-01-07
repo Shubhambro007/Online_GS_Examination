@@ -61,17 +61,66 @@ To ensure the project runs correctly, you need to update the libraries by adding
    - **Input Validation:** Input from users is validated on both the client and server sides to prevent SQL injection and other attacks.
    - **Session Management:** Sessions are securely managed using session tokens, ensuring that only authorized users can access their accounts.
 
-### Future Enhancements
+### **Requirements**:
 
-1. **Analytics and Reporting:**
-   - Generate detailed reports and analytics on exam performance, user activity, and system usage.
+To run the **Online Examination System** project, make sure you have the following tools and dependencies installed:
 
-2. **Additional Question Types:**
-   - Support for other question types such as short answer, true/false, and essay questions to make the exam system more versatile.
+#### 1. **Java Development Kit (JDK)**:
+   - Ensure you have **JDK 8 or higher** installed. You can download it from [Oracle's official website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 
-3. **Mobile Support:**
-   - Develop a mobile-friendly version or a dedicated mobile app to allow users to take exams on their smartphones and tablets.
+#### 2. **IntelliJ IDEA**:
+   - Download and install **IntelliJ IDEA** from [JetBrains' official website](https://www.jetbrains.com/idea/). This is the recommended IDE for Java development.
+   - Make sure the **JavaFX** plugin is enabled in IntelliJ IDEA.
 
-### Setup Instructions
-   -currently we're using Online MySQL database from Aiven Console...Inorder to Use your own DataBase modify url,username,password accordingly in database file
+#### 3. **JavaFX Framework**:
+   - **JavaFX** is used to create the front-end of the application. If not already installed, follow these steps:
+     - **For IntelliJ IDEA**:
+       - Go to **File > Project Structure > Libraries**.
+       - Download and add **JavaFX SDK** from [Gluon](https://gluonhq.com/products/javafx/).
+       - Under the **VM options** in IntelliJ, add the following:
+         ```
+         --module-path <path_to_your_javafx_sdk>/lib --add-modules javafx.controls,javafx.fxml
+         ```
+     - **For other IDEs or command-line builds**, ensure that the **JavaFX SDK** is included in your `classpath` or build configuration.
 
+#### 4. **MySQL Database**:
+   - **JDBC Driver**: You need to install the **MySQL JDBC driver** to connect to the database.
+     - Download **MySQL Connector/J** (e.g., `mysql-connector-j-9.1.0`) from the [official MySQL website](https://dev.mysql.com/downloads/connector/j/).
+   - **MySQL Server**:
+     - Use an **online MySQL database** such as **Aiven** or run your own MySQL server locally.
+     - Update the **database connection settings** (URL, username, password) in the `database` file or code configuration.
+     - Example connection URL:
+       ```java
+       'String url = "jdbc:mysql://your-database-url:3306/database_name";
+       String user = "your-username";
+       String password = "your-password";
+       Connection conn = DriverManager.getConnection(url, user, password);'
+       ```
+
+---
+
+### **Setup Instructions**:
+
+1. **Download Dependencies**:
+   - Download the necessary libraries (JavaFX, JDBC, etc.) and ensure they are added to the project as described above.
+
+2. **Configure MySQL Database**:
+   - If using the **Aiven Console** for MySQL:
+     - Log in to the **Aiven Console**, create a MySQL instance, and get the connection details (host, port, username, password).
+     - Update your `database` connection settings in your backend code to match these credentials.
+
+3. **Build and Run**:
+   - Open **IntelliJ IDEA** and import the project.
+   - Ensure the libraries are correctly linked by navigating to **File > Project Structure** and confirming that all dependencies (like JDBC, JavaFX) are added to the project.
+   - Build the project and run it.
+
+4. **Test Functionality**:
+   - Test each of the features: logging in, signing up, profile management, and taking an MCQ exam.
+
+---
+
+### **Future Enhancements**:
+
+- **Analytics and Reporting**: Implement features to generate detailed reports on exam performance and user activity.
+- **Additional Question Types**: Support for other types of questions like true/false, short answers, or essays.
+- **Mobile Support**: Develop a mobile-friendly version or dedicated mobile app for exams.
